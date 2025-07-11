@@ -1,32 +1,92 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اسم إضافتك</title>
+    <title>Containers Manager Extension</title>
+    
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #333; }
-        p { color: #555; }
-        a { color: #007BFF; }
-        footer { margin-top: 40px; font-size: 0.9em; color: #777; }
+        :root {
+            --primary-color: #007bff;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+            --text-color: #495057;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: var(--dark-gray);
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: var(--dark-gray);
+        }
+        p {
+            font-size: 1.1em;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
 
-    <h1>مرحبًا بك في صفحة "اسم إضافتك"</h1>
-    
-    <p>
-        هذه الإضافة تساعدك على... (هنا اكتب وصفًا بسيطًا ومباشرًا لما تفعله إضافتك).
-    </p>
-    
-    <p>
-        نحن نأخذ خصوصيتك على محمل الجد. لمعرفة المزيد حول كيفية تعاملنا مع بياناتك، يرجى قراءة <a href="privacy.html">سياسة الخصوصية</a>.
-    </p>
+    <div class="container">
+        <header>
+            <h1>Containers Manager Extension</h1>
+        </header>
+        
+        <main>
+            <h2>Welcome!</h2>
+            <p>
+                The <strong>Containers Manager</strong> extension helps you...
+                (Example: ...easily manage containers in the Firefox browser, allowing you to separate your work and personal Browse with a single click.)
+            </p>
+            
+            <h2>Privacy & Security</h2>
+            <p>
+                We take your privacy seriously. None of your personal data is stored or shared. To learn more, please read our full <a href="privacy.html">Privacy Policy</a>.
+            </p>
+        </main>
 
-    <footer>
-        <p>للتواصل أو الدعم، يرجى إرسال بريد إلكتروني إلى: your-email@example.com</p>
-    </footer>
+        <footer>
+             <p>For support and inquiries, please contact us at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </footer>
+    </div>
 
 </body>
 </html>
